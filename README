@@ -1,0 +1,30 @@
+Julia Explorer
+==============
+
+Simon Peters, 2016.
+
+Written in C++ using SDL2 and GLES2.  Initially built on a Raspberry Pi 3.
+
+Alters view based on XY of the mouse and zooms with scroll wheel
+(this is fairly limited at present).
+
+Required are:
+
+GLES2 library/includes at /opt/vc/lib and /opt/vc/include - 
+  I believe these are fairly Pi-specific.
+
+SDL2 library/includes at /usr/local/lib/ and /usr/local/include/SDL2
+
+
+This is my first go at c++ coding in 2 decades, go easy!
+
+I know it'll probably leak like a sieve as there's no cleanup.
+
+Code was adopted and modified from original code here (for the GL/GLES routine):
+http://blog.marmakoide.org/?p=110
+
+and here (for the initialisation)
+https://gist.github.com/SuperV1234/5c5ad838fe5fe1bf54f9
+
+Made available under GPLv3:
+http://www.gnu.org/licenses/gpl-3.0.en.html
